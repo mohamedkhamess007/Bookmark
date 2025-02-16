@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bookmark</title>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="head text-center">
+
+            <h1>Bookmarker</h1>
+        </div>
+        <div class="line d-flex justify-content-center mt-5 ">
+
+            <div class="text">
+                <h2>
+                    <i class="fa-solid fa-bookmark mx-2"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark mx-2"></i>
+                </h2>
+
+            </div>
+
+
+        </div>
+        <div class="form mt-5">
+            <div class="mb-3">
+                <label for="siteName" class="form-label">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                    Site Name</label>
+                <input type="text" class="form-control " oninput="allValidation(this ,'msgName')" id="siteName"
+                    aria-describedby="emailHelp">
+                <!-- <div id="lap" class="form-text">We'll never share your name with anyone else.</div> -->
+                <p id="msgName" class="alert alert-danger p-2 d-none">Website name is not valid</p>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="basic-url" class="form-label">
+                    <i class="fa-solid fa-link"></i>
+                    Site URL</label>
+                <div class="input-group">
+                    <!-- <span class="input-group-text" id="basic-addon3">https://example.com/users/</span> -->
+                    <input type="text" oninput="allValidation( this , 'msgUrl')" class="form-control" id="basic-url"
+                        aria-describedby="basic-addon3 basic-addon4">
+                    <p id="msgUrl" class="alert alert-danger p-2 d-none">Website Url Is Not Valid</p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-1 px-5 text-center mt-3" onclick=" addWebsite()">Submit</button>
+        </div>
+        <div class="w-100 mx-auto mt-5">
+            <div class="container-fluid">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th> Delete</th>
+                        </tr>
+
+
+                    </thead>
+                    <tbody id="rowWeb">
+
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+
+        <!-- <div class="container d-flex justify-content-center align-items-center">
+            <div class="tabel mt-5 text-center bg-light p-3 ">
+                <table>
+                    <thead class="border-bottom p-2">
+                        <tr class="mx-5 d-flex justify-content-center align-items-center">
+                            <th>
+                                Index</th>
+                            <th class="mx-5">Website Name</th>
+                            <th class="mx-5">Visit</th>
+                            <th class="mx-5"> Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr class="d-flex justify-content-center align-items-center mx-5">
+                            <td class="mx-5">1</td>
+                            <td class="mx-5"> google</td>
+                            <td class="mx-5">
+                                <button class="btn btn-visit btn-success">
+                                 
+                                    Visit</button>
+                            </td>
+                            <td class="mx-5">
+                                <button class="btn btn-delete btn-danger">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                    Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> -->
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/index.js"></script>
+</body>
+
+</html>

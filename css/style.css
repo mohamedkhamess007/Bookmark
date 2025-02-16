@@ -1,0 +1,30 @@
+body{
+  
+    background-color: #f7ecde;
+}
+.head h1{
+    margin-top: 10px;
+    font-weight: 500;
+    font-size:50px ;
+
+    font-family: "Pacifico", cursive;
+    padding: 90px 20px;
+    border-bottom: 3px dotted;
+}
+.line h2{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right,#3ca55c ,#b5ac49);
+
+}
+.btn-1
+{
+    background-color: rgb(187, 65, 32);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.form{
+    padding-bottom: 40px;
+    border-bottom: 2px dotted;
+}
